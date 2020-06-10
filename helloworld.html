@@ -1,0 +1,43 @@
+<! DOCTYPE html>
+<html>
+<head> 
+<h1>  Java script </h1>
+</head>
+<body>
+
+<p id ="id1"></p>
+<p id ="id5"></p>
+<script>
+document.getElementById('id1').innerHTML ="First program";
+var x = "swathi"
+document.getElementById('id5').innerHTML = x;
+document.write("Hello world");
+
+function func1(){
+
+document.getElementById("id2").innerHTML="changed";
+}
+
+function func2(){
+document.getElementById("id4").innerHTML="16";
+window.alert(16);
+}
+var x = "swathi";
+document.getElementById("id5").innerHTML= x;
+</script>
+<script  src=" demo.js"></script>
+<p id ="id2">  it can be changed by clicking this button</p>
+<button type="button" Onclick="func1()"> Click Here</button>
+
+<p id ="id3">  THis is written with external javascript</p>
+<button type="button" Onclick="func1()"> try Here</button>
+<p id ="id4">  9+7</p>
+<button  type="button"  Onclick="func2()"> add</button>
+<button  type="button"  Onclick="window.print()"> To print</button>
+
+<p id= "id5"> </p>
+
+
+</body>
+
+</html>
