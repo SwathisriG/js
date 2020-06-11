@@ -1,0 +1,27 @@
+<! DOCTYPE html>
+
+<html>
+
+<body>
+<p id="id1"></p>
+<script>
+var city ,i,text;
+city=["chennai","bangalore","coimbatore","trichy"];
+document.write(city.length);
+		for(i=0;i<city.length;i++){
+			text+="<li>"+city[i]+"<li>";	
+		}
+ text+=""
+ document.getElementById("id1").innerHTML=text;
+ document.write(city.sort());
+city.push("madurai");
+  document.write(city.sort());
+var x=city[0];
+  document.write(x);
+</script>
+
+
+
+</body>
+
+</html>

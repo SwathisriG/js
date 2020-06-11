@@ -1,0 +1,35 @@
+<! DOCTYPE html>
+<html>
+<body>
+<p id = "id1"></p>
+<p id="demo"></P>
+<p id="demo1"></P>
+<script>
+
+var person = {
+  firstName: "a",
+  lastName : "b",
+  fullname : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+
+document.getElementById("id1").innerHTML=person.fullname();
+function func(){
+var x;
+document.getElementById("id2").value=x;
+return x;
+}
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits.length;
+document.getElementById("demo").innerHTML = fruits.sort();
+</script>
+<form  onsubmit="func()">
+<input type="text" id = "id2" >
+<input type="submit" >
+</form>
+</body>
+
+</html>
