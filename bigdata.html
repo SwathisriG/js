@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+#id1{
+background-color:lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+#id2{
+color:red;
+text-align:center;
+}
+#id3{
+
+text-align:center;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px sould #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inulne-block;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+.class1 {
+  padding: 10px;
+  text-aulgn: center-left;
+  width: 15%;
+  margin-top: 5px;
+}
+
+.class2 {
+  padding: 10px;
+  text-aulgn: center-right;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<script>
+function validateForm() {
+  var x = document.getElementById('id5').value;
+  if (x == " ") {
+    alert(" empty cant be taken");
+    return false;
+  }
+}
+
+
+
+</script>
+
+<h2 id="id1">Big Data Boss - Season 1</h2>
+<p id="id3">A Big Boss style machine learning event on Kollywood hypothetical data</p>
+<p id="id3">Event time:</p>
+<p id="id3">Contact us at<a  id ="id3" href= admin@artisttics.com> admin@artisttics.com </a></p>
+<p id="id3">Website:<a  id ="id3" href=https://artisttics.com/>https://artisttics.com/</a></p>
+
+<p id="id3">As we are launching our Alpha version with VIP users.</p>
+<p id="id3">Image credits: Photo by Feulx Mittermeier on Unsplash</p>
+<p id="id2">* Required</p>
+<div class="container">
+  <form action= ""  onsubmit="return validateForm()">
+    <div class="row">
+      <div class="class1">
+        <label for="email">Email address *</label>
+      </div>
+      <div class="class2">
+        <input type="text" id="id5"  name="email" placeholder="your answer">
+      </div>
+    </div>
+    <div class="row">
+      <div class="class1">
+        <label for="name1" >Can u attend ?</label>
+      </div>
+      <div class="class2">
+		<ul><input type="radio"  value="yes,i'll be there">
+			<label>yes,i'll be there</label></ul>
+		<ul><input type="radio"  value="No, i'cant">
+			<label>No, i'cant</label></ul>
+		<ul><input type="radio"  value="NOt sure">
+			<label>NOt sure</label></ul>
+      </div>
+    </div>
+	<div class="row">
+      <div class="class1">
+        <label for="fname">your answer *</label>
+      </div>
+      <div class="class2">
+        <input type="text" id="id5" name="name" placeholder="your answer">
+      </div>
+    </div>
+	<div class="row">
+      <div class="class1">
+        <label for="fname">Nationality*</label>
+      </div>
+      <div class="class2">
+        <input type="text" id="id5" name="nation1" placeholder="your answer">
+      </div>
+    </div>
+	<div class="row">
+      <div class="class1">
+        <label for="fname">Mother Tongue*</label>
+      </div>
+      <div class="class2">
+        <input type="text" id="id5" name="tongue1" placeholder="your answer">
+      </div>
+    </div>
+	<div class="row">
+      <div class="class1">
+        <label for="q">How did you hear about this event? *</label>
+      </div>
+      <div class="class2">
+		<ul><input type="radio"  value="yes,i'll be there">
+			<label>Website</label></ul>
+		<ul><input type="radio"  value="No, i'cant">
+			<label>Friend</label></ul>
+		<ul><input type="radio"  value="NOt sure">
+			<label>News letter</label></ul>
+		<ul><input type="radio"  value="NOt sure">
+			<label>Advertisment</label></ul>
+      </div>
+    </div>
+	
+	<div class="row">
+      <div class="class1">
+        <label for="fname">If you are referred by your friend, please mention their name</label>
+      </div>
+      <div class="class2">
+        <input type="text" id="id5" name="refer1" placeholder="your answer">
+      </div>
+    </div>
+	<div class="row">
+      <div class="class1">
+        <label for="fname">Your Phone *</label>
+      </div>
+      <div class="class2">
+        <input type="text" id="id5" name="phone" placeholder="your answer">
+      </div>
+    </div>
+	<div class="row">
+      <div class="class1">
+        <label for="fname">Your Github account (If you don't have one, create it) *</label>
+      </div>
+      <div class="class2">
+        <input type="text" id="id5" name="name1" placeholder="your answer">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="class1">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="class2">
+        <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

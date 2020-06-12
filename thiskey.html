@@ -2,8 +2,6 @@
 <html>
 <body>
 <p id = "id1"></p>
-<p id="demo"></P>
-<p id="demo1"></P>
 <script>
 
 var person = {
@@ -19,12 +17,8 @@ document.getElementById("id1").innerHTML=person.fullname();
 function func(){
 var x;
 document.getElementById("id2").value=x;
-return x;
+return x.length;
 }
-
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-document.getElementById("demo1").innerHTML = fruits.length;
-document.getElementById("demo").innerHTML = fruits.sort();
 </script>
 <form  onsubmit="func()">
 <input type="text" id = "id2" >
